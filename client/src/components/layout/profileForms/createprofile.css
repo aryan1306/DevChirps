@@ -1,0 +1,36 @@
+.form .social-input {
+    display: flex;
+  }
+  
+  .form .social-input i {
+    padding: 0.5rem;
+    width: 4rem;
+  }
+  
+  .form .social-input i.fa-twitter {
+    color: #38a1f3;
+  }
+  .form .social-input i.fa-facebook {
+    color: #3b5998;
+  }
+  .form .social-input i.fa-instagram {
+    color: #3f729b;
+  }
+  .form .social-input i.fa-youtube {
+    color: #c4302b;
+  }
+  .form .social-input i.fa-linkedin {
+    color: #0077b5;
+  }
+  .my-2 {
+    margin: 2rem 0;
+  }
+  .mg-1{
+      margin-bottom: 1rem;
+  }  
+  .mg-r1{
+      margin-right: 1rem;
+  }
+  h1{
+      margin: 2rem auto 1rem auto;
+  }

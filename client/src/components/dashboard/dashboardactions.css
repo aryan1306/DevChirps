@@ -1,0 +1,25 @@
+.mg-1{
+    margin: 1rem ;
+}
+.container-main{
+    margin: 2rem auto;
+    background-color: #F7F7F9;
+    padding: 1rem;
+    border-radius: 0.65rem;
+}
+.btn-space{
+ align-items: center;
+}
+
+@media (min-width: 700px) {
+    .container-main{
+        margin: 2rem auto;
+        background-color: #F7F7F9;
+        padding: 1rem;
+        border-radius: 0.65rem;
+        display: inline-block;
+    }
+    .btn-space{
+        width: 90%;
+    }
+}
