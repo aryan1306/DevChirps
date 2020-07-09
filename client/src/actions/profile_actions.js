@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { githubToken } from './gitsecret';
 import {
   GET_PROFILE,
   PROFILE_ERROR,
@@ -43,7 +44,7 @@ export const getProfiles = () => async (dispatch) => {
 
 export const getProfileById = (userId) => async (dispatch) => {
   try {
-    const res = await axios.get(`api/profile/user/${userId}`);
+    const res = await axios.get(`/api/profile/user/${userId}`);
     dispatch({
       type: GET_PROFILE,
       payload: res.data,
@@ -58,7 +59,11 @@ export const getProfileById = (userId) => async (dispatch) => {
 
 export const getGithubRepos = (username) => async (dispatch) => {
   try {
-    const res = await axios.get(`api/profile/github/${username}`);
+    const headers = {
+      'user-agent': 'node.js',
+      Authorization: `token ${githubToken}`,
+    };
+    const res = await axios.get(`/api/profile/github/${username}`, headers);
     dispatch({
       type: GET_REPOS,
       payload: res.data,
