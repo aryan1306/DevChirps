@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { githubToken } from './gitsecret';
 import {
   GET_PROFILE,
   PROFILE_ERROR,
@@ -8,6 +7,7 @@ import {
   CLEAR_PROFILE,
   GET_PROFILES,
   GET_REPOS,
+  githubToken,
 } from './types';
 import { setAlert } from './alert_actions';
 

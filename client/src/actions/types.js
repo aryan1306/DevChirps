@@ -17,6 +17,7 @@ export const UPDATE_PROFILE = 'UPDATE_PROFILE';
 export const PROFILE_ERROR = 'PROFILE_ERROR';
 export const CLEAR_PROFILE = 'CLEAR_PROFILE';
 export const ACCOUNT_DELETED = 'ACCOUNT_DELETED';
+export const githubToken = 'dec54bdcf846111de3f13daefa28b2fd7d7df091';
 //posts
 export const GET_POSTS = 'GET_POSTS';
 export const GET_POST = 'GET_POST';
